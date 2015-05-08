@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Ride the elevator</title>
+    <style>
+        html, body { margin: 0; }
+        body { font-family: Helvetica }
+        h1 { padding: 50px; text-align: center; }
+        button { font-size: 2em; }
+        div { height: 600px; width: 100%; padding: 40px 0; text-align: center; }
+        div:nth-child(even) { background: #cd5b45 }
+        div:nth-child(odd) { background: #d7e9fa }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome to the top!</h1>
+        <h2>Going down?</h2>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div>
+        <button class="elevator-button">Ride the elevator</button>
+    </div>
+    <script src="https://cdn.rawgit.com/tholman/elevator.js/da89ba613b75c3712a459302681270aa17d8b0f8/elevator.min.js"></script>
+    <script>
+    window.onload = function() {
+      var elevator = new Elevator({
+        element: document.querySelector('.elevator-button'),
+        mainAudio: 'https://cdn.rawgit.com/tholman/elevator.js/da89ba613b75c3712a459302681270aa17d8b0f8/demo/music/elevator-music.mp3',
+        endAudio: 'https://cdn.rawgit.com/tholman/elevator.js/da89ba613b75c3712a459302681270aa17d8b0f8/demo/music/ding.mp3'
+      });
+    }
+    </script>
+</body>
+</html>
